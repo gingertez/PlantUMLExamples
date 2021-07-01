@@ -1,0 +1,30 @@
+@startuml
+'Example Sequence Diagram
+'For documentation see https://plantuml.com/sequence-diagram
+
+'For docs on themes see https://plantuml.com/theme
+!theme cerulean
+
+actor Customer as C
+participant Service as S
+database Storage as DB
+
+activate C
+C -> S : Request information
+activate S
+S -> S : Verify request
+S -> DB : Execute query
+activate DB
+alt Data Not Found
+  S <-- DB: return "empty" data response
+  C <-- S: return "Data not found" message
+else Data Found
+  S <-- DB : return Data
+  deactivate DB
+  S -> S : Format data
+  C <-- S : Return information
+end
+deactivate S
+deactivate C
+
+@enduml
