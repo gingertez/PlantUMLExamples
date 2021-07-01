@@ -1,0 +1,15 @@
+@startuml
+
+'Example Activity (Flow) Diagram
+'For documentation see https://plantuml.com/activity-diagram-beta
+
+start
+:Do Activity 1;
+if (Activity 2 to be done?) then (yes)
+  :Activity 2;
+else (no)
+endif
+
+stop
+
+@enduml
