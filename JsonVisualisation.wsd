@@ -1,0 +1,58 @@
+@startjson
+
+'Example JSON visualisation
+'For documentation see https://plantuml.com/json
+
+#highlight "people" / "0" / "lastName"
+#highlight "people" / "0" / "isAlive"
+#highlight "people" / "1" / "lastName"
+#highlight "people" / "1" / "isAlive"
+{
+  "people" : [
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "isAlive": true,
+      "age": 28,
+      "address": {
+        "streetAddress": "21 2nd Street",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10021-3100"
+      },
+      "phoneNumbers": [
+        {
+          "type": "home",
+          "number": "212 555-1234"
+        },
+        {
+          "type": "office",
+          "number": "646 555-4567"
+        }
+      ],
+      "children": [],
+      "spouse": null
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "isAlive": false,
+      "age": 38,
+      "address": {
+        "streetAddress": "123 Fake Street",
+        "city": "Springfield",
+        "state": null,
+        "postalCode": null
+      },
+      "phoneNumbers": [
+        {
+          "type": "home",
+          "number": "212 555-1234"
+        }
+      ],
+      "children": [],
+      "spouse": null
+    }
+  ]
+}
+@endjson
