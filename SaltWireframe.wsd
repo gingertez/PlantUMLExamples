@@ -1,0 +1,17 @@
+@startuml
+'Example Salt Wireframe
+'For documentation see https://plantuml.com/salt
+
+@startsalt
+{
+  Just plain text
+  [This is my button]
+  ()  Unchecked radio
+  (X) Checked radio
+  []  Unchecked box
+  [X] Checked box
+  "Enter text here   "
+  ^This is a droplist^
+}
+@endsalt
+@enduml
