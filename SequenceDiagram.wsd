@@ -3,6 +3,7 @@
 'For documentation see https://plantuml.com/sequence-diagram
 
 'For docs on themes see https://plantuml.com/theme
+'Remove the line below if you want to use the default PlantUML look and feel
 !theme cerulean
 
 actor Customer as C
