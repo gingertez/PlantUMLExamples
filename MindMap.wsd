@@ -1,0 +1,27 @@
+@startmindmap
+
+'Example Mind Map
+'For documentation see https://plantuml.com/mindmap-diagram
+
++[#pink] My Brain
+
+++ <&musical-note> Music
++++ <&media-play> Listening
+++++_ Explore EDM
+++++_ Check out JMJ's Amazonia
++++ Writing/Recording
+++++_ Update Plugins
+++++_ Finish Cellissimo
+
+++ <&briefcase> Work
++++ Nothing to see here :-)
+-- <&heart> Love
+--- <&box> Birthday soon
+--- Buy Roses
+-- <&video> Entertainment
+--- Starz trial
+----_ Trial ends 31st July
+----_ <&check> The Stand
+----_ Veronica Mars
+
+@endmindmap
