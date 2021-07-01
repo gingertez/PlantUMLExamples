@@ -1,0 +1,33 @@
+@startuml
+'Example Class Diagram
+'For documentation see https://plantuml.com/class-diagram
+
+'For docs on themes see https://plantuml.com/theme
+'Remove the line below if you want the defaul PlantUML look and feel
+!theme spacelab
+
+hide empty members 
+
+class UmlDiagram {
+  Shape[] shapes
+  void render()
+}
+class Shape {
+  int numberOfSides
+  double calculateArea()
+}
+class Square
+note left : default\nnumberOfSides\nto 4
+class Polygon
+class Circle {
+  double radius
+}
+
+UmlDiagram "1" *-- "many" Shape
+
+Shape <|-- Square
+Shape <|-- Polygon
+Shape <|-- Circle
+
+Square : (numberOfSides = 4)
+@enduml
