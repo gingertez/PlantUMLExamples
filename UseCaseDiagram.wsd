@@ -1,0 +1,26 @@
+@startuml
+
+'Example Use Case Diagram
+'For documentation see https://plantuml.com/use-case-diagram
+
+left to right direction
+actor Guest as g
+package Professional {
+  actor Chef as c
+  actor "Food Critic" as fc
+}
+package Restaurant {
+  usecase "Eat Food" as UC1
+  usecase "Pay for Food" as UC2
+  usecase "Drink" as UC3
+  usecase "Prepare food" as UC5
+  usecase "Review" as UC4
+}
+fc --> UC4
+fc --> UC1
+fc --> UC3
+c --> UC5
+g --> UC1
+g --> UC2
+g --> UC3
+@enduml
