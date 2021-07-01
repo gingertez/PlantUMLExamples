@@ -1,0 +1,16 @@
+@startuml
+'Example Activity (Flow) Diagram with Swimlanes
+'For documentation see https://plantuml.com/activity-diagram-beta
+
+|Swimlane 1|
+start
+:Do Activity 1;
+if (Activity 2 to be done?) then (yes)
+  :Activity 2;
+else (no)
+endif
+
+|Swimlane 2|
+:Activity 3;
+stop
+@enduml
