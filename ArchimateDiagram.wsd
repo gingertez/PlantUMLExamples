@@ -28,8 +28,8 @@ V -right->> I
 I -right->> P
 
 rectangle "Scanning" as scanning <<$aService>><<behavior>> #Application
-rectangle "Customer admnistration" as customerAdministration <<$aService>><<behavior>> #Application
-rectangle "Claims admnistration" as claimsAdministration <<$aService>><<behavior>> #Application
+rectangle "Customer administration" as customerAdministration <<$aService>><<behavior>> #Application
+rectangle "Claims administration" as claimsAdministration <<$aService>><<behavior>> #Application
 rectangle Printing <<$aService>><<behavior>> #Application
 rectangle Payment <<$aService>><<behavior>> #Application
 
