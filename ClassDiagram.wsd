@@ -2,10 +2,6 @@
 'Example Class Diagram
 'For documentation see https://plantuml.com/class-diagram
 
-'For docs on themes see https://plantuml.com/theme
-'Remove the line below if you want the defaul PlantUML look and feel
-!theme spacelab
-
 hide empty members 
 
 class UmlDiagram {
